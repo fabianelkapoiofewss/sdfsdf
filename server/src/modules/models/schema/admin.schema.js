@@ -1,7 +1,7 @@
 import { body } from "express-validator";
 
 export const loginValidationRules = [
-    body('correoElectronico')
+    body('identificador')
         .exists().withMessage('El correo electronico es requerido')
         .notEmpty().withMessage('El correo electronico es requerido')
         .isEmail().withMessage('Debe ser un correo electrónico válido'),
