@@ -10,9 +10,7 @@ const app = express()
 const port = envConfig.PORT
 const isProduction = envConfig.NODE_ENV === 'production'
 app.use(cors({
-    origin: isProduction
-        ? 'https://por-siempre-companero.pages.dev/'
-        : 'http://localhost:5173',
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
