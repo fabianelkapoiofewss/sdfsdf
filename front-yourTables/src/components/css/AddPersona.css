@@ -1,0 +1,196 @@
+/* PALETA FORMOSA
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+.box-title-modal {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.box-title-modal h2{
+  margin: 0;
+  padding-left: 1rem;
+  color: white;
+}
+.div-box-form-modal {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.div-box-form-modal form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-inputs label{
+  width: 80%;
+  margin-bottom: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.box-inputs input{
+  width: 80%;
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+.box-form-button {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* MODAL ADD PERSONA */
+
+.box-modal-add-persona {
+
+  position: fixed; /* Fijo en relación al viewport */
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Centrando */
+  z-index: 1000; /* Asegurando que esté encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 70%;
+  max-height: 97vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #B0C4DE;
+  background-color: #0047AB;
+}
+
+.box-form-modal-add {
+  width: 100%;
+  /* height: auto; */
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-right: 10px;
+}
+
+.box-form-modal-add form{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.box-inputs-add-persona {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.box-inputs-add-persona label{
+  width: 100%;
+  margin-bottom: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.box-inputs-add-persona input{
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+.box-inputs-add-persona select{
+  margin-bottom: 1rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  line-height: 40px;    /* Alineación vertical */
+  padding: 0 8px;       /* Ajuste del padding interno */
+}
+
+.box-ubicacion{
+  position: fixed; /* Fijo en relación al viewport */
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Centrando */
+  z-index: 1000; /* Asegurando que esté encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 75%;
+  height: 38rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #B0C4DE;
+  background-color: #0047AB;
+
+}
+#box-seleccione-ubicacion-titulo{
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+#box-seleccione-ubicacion-titulo h3{
+  margin-left: 1rem;
+}
+#box-seleccione-ubicacion-titulo p{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+#box-seleccione-ubicacion-mapa{
+  width: 100%;
+  height: 86%;
+  background-color: wheat;
+}
+#box-seleccione-ubicacion-boton {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+  .box-modal-add-persona {
+    width: 90%;
+  }
+}

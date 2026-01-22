@@ -1,0 +1,53 @@
+
+
+.box-loading-results-search-personas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    color: white;
+}
+
+
+#box-modal-add-register-results-search {
+    margin-top: 0.5rem;
+    max-height: 11.5rem;
+    overflow-y: auto;
+}
+
+#box-modal-add-register-results-search table {
+    background-color: white;
+    padding: 1rem;
+    border-collapse: collapse;
+    /* Para evitar que haya doble borde */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    color: black;
+}
+
+#box-modal-add-register-results-search table thead {
+    border-bottom: 2px solid #444342;
+    background-color: #B0C4DE;
+
+}
+
+#box-modal-add-register-results-search table thead th {
+    padding: 0.5rem;
+    border: 1px solid black;
+    /* Bordes de color negro */
+    text-align: center;
+    /* Alineación del texto */
+}
+
+#box-modal-add-register-results-search table tbody {
+    border: 1px solid black;
+    /* Bordes de color negro */
+}
+
+#box-modal-add-register-results-search table tbody td {
+    border: 1px solid black;
+    /* Bordes de color negro */
+    padding: 0.3rem;
+}

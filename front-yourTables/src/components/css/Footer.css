@@ -1,0 +1,40 @@
+/* PALETA RETRO
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+
+*/
+
+#caja-footer {
+  width: 100%;
+  height: 5rem;
+  /* border-top: 2px solid #31572C; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0047AB;
+  color: white;
+  border-top: 0.8rem solid white;
+}
+#caja-footer p{
+  margin-left: 0.5rem;
+  margin-right: 0.9rem;
+  font-size: 1rem;
+}
+.social-icon {
+  font-size: 1rem;
+  color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+}

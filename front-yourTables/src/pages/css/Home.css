@@ -1,0 +1,128 @@
+/* PALETA FORMOSA
+
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+#box-body-main-home {
+  width: 100%;
+  min-height: 52rem;
+ /* background: linear-gradient(to bottom, #FFFFFF, #0047AB);*/
+  background-color:#B0C4DE;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box-main-home {
+  width: 30%;
+  height: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 8rem;
+  padding: 0;
+}
+
+.fourBoxes {
+  width: 40%;
+  height: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color:#B0C4DE;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+}
+.fourBoxes img{
+  height: 60%;
+  border-radius: 5px;
+  /*border: 2px solid #444342;*/
+  margin-bottom: 0.3rem;
+}
+.fourBoxes a{
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0.1rem;
+  margin-top: 0.3rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.fourBoxes a:hover{
+  color: black;
+  /*text-shadow: 2px 2px 4px #ffd000, -1px -1px 2px rgba(0,0,0,0.5);*/
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+  
+}
+
+@media (max-width: 1024px) {
+  #box-body-main-home {
+    min-height: 55rem;
+  }
+  #box-main-home {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #box-body-main-home {
+    min-height: 100vh;
+    padding-top: 4rem;
+  }
+
+  #box-main-home {
+    width: 30%;
+    height: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+
+  .fourBoxes {
+    width: 100%;
+    height: 18rem;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #B0C4DE;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+  }
+
+  .fourBoxes:hover {
+    transform: scale(1.05);
+  }
+
+  .fourBoxes img {
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .fourBoxes a {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+}

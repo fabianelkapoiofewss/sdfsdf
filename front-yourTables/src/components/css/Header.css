@@ -1,0 +1,187 @@
+/* PALETA FORMOSA
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+#header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0047AB;
+  border-bottom: 0.8rem solid white;
+  box-shadow: 0 10px 8px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.header-no-fijo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.header-fijo {
+  position: fixed;  /* Hace que el header sea fijo */
+  z-index: 1000;    /* Asegura que el header esté por encima de otros elementos */
+  top: 0;           /* Alinea el header con la parte superior de la pantalla */
+  left: 0;          /* Alinea el header con el borde izquierdo de la pantalla */
+}
+
+#box-header-center {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box-logo-header {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-logo-header a{
+  text-decoration: none;
+  height: 80%;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+#box-logo-header img{
+  height: 100%;
+}
+#box-botonera {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-botonera button {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #00008B;
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#box-botonera button:hover {
+  background-color: #00008B;
+  color: #B0C4DE;
+  transform: scale(1.1);
+}
+
+  #box-perfil {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-perfil-img {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+#box-perfil-img img{
+  height: 95%;
+  border-radius: 50%;
+}
+#box-perfil-text {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#box-perfil-text p{ 
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+#boton-perfil-cerrarSesion {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#dropdown-menu-perfil {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 145px;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1100;
+}
+
+
+#dropdown-menu-perfil::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+#dropdown-menu-perfil #dropdown-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 2px 0 2px;
+}
+
+#dropdown-menu-perfil #dropdown-item,
+#dropdown-menu-perfil a {
+  color: #424242;
+  padding: 8px 0 8px auto;
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#dropdown-menu-perfil #dropdown-item:hover {
+  background-color: #d9d9d9;
+}

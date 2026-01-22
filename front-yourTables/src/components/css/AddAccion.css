@@ -1,0 +1,77 @@
+/* PALETA FORMOSA
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+#box-modal-add-accion {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 60%;
+  height: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #B0C4DE;
+  background-color: #0047AB;
+}
+
+.box-form-modal-agregarAccion {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-agregarAccion {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.box-inputs-add-accion {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-inputs-add-accion label {
+  width: 100%;
+  margin-bottom: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.box-inputs-add-accion input {
+  margin-bottom: 1rem;
+  height: 2rem;
+}
+
+.box-form-button-save-accion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

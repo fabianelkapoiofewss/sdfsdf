@@ -1,0 +1,75 @@
+#box-modal-edit-coordinador {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #B0C4DE;
+    background-color: #0047AB;
+}
+
+
+#caja-fechas-edit-coordinador {
+    width: 45%;
+}
+
+
+#caja-fechas-edit-coordinador {
+    padding: 2rem 2rem 2rem 0;
+}
+
+
+#caja-fechas-edit-coordinador label {
+    font-size: 16px;
+    color: white;
+}
+
+#caja-fechas-edit-coordinador input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#box-li-barrios-dirigente {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    margin: 2px 0;
+}
+
+#boton-remove-barrio {
+    color: red;
+    transition: transform 0.3s;
+    cursor: pointer;
+    /* Indica que es clickeable */
+}
+
+#boton-remove-barrio:hover {
+    transform: scale(1.2);
+}
+
+#caja-boton-carga-coordinadores {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#box-li-jurisdiccion-coordinador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}

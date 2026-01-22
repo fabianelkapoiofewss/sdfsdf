@@ -1,0 +1,486 @@
+/* PALETA RETRO
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+
+*/
+
+.box-padre-mapa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#box-referencia-filtro-colors-eventos-activo {
+  width: 20%;
+  height: 38rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 7rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #0047AB;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  border: 2px solid #B0C4DE;
+  opacity: 1;
+  overflow: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+#box-referencia-filtro-colors-eventos-inactivo {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.box-referencia-colors-eventos {
+  outline: 1px solid white;
+  width: 100%;
+  height: 18rem;
+  padding: 0;
+}
+
+.box-referencia-colors-eventos ul {
+  padding-left: 1rem;
+}
+
+#icono-mostrar-referencia {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  height: 2rem;
+  margin-top: 7.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  color: white;
+  background-color: #0047AB;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#caja-icon-cierre-box-referencia {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#caja-icon-cierre-box-referencia #icono-cierre {
+  color: white;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.box-filtro-activo-mapa {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  color: white;
+  padding-right: 0.5rem;
+}
+
+.box-filtro-activo-mapa h3 {
+  text-align: center;
+}
+
+#box-body-main-maps {
+  width: 100%;
+  min-height: 53rem;
+  height: auto;
+  background-color: #B0C4DE;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box-main-maps {
+  width: 80%;
+  height: 38rem;
+  background-color: #0047AB;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin-top: 7rem;
+  margin-right: 0.5rem;
+  border: 2px solid #B0C4DE;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-opciones-map-up {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+#box-map {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#box-opciones-map-down {
+  width: 100%;
+  height: 10%;
+}
+
+.filtro-container {
+  color: white;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+/* MAPA */
+
+.input-search-map {
+  border: 1px solid transparent;
+  width: 240px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  outline: none;
+  margin-right: 0.8rem;
+
+}
+
+@media (max-width: 1024px) {
+  #box-body-main-maps {
+    min-height: 55rem;
+  }
+
+  #box-main-maps {
+    width: 98%;
+  }
+}
+
+#filters-container-eventos label,
+#filters-container-personas label,
+#filters-container-instituciones label,
+#filters-container-estructura label {
+  color: white;
+  font-weight: bold;
+}
+
+#filters-container-eventos select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0047AB;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#filters-container-eventos input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #0047AB;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#box-titulo-maps {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.box-titulo-maps-filtros {
+  display: none !important;
+}
+
+.box-filtro-select-options {
+  display: flex;
+  width: 20%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box-filtro-select-options label {
+  margin-left: 1rem;
+  font-weight: bold;
+  width: 40%;
+}
+
+.box-filtro-select-options select {
+  width: 60%;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  color: black;
+  margin-right: 6rem;
+}
+
+.box-filtro-select-options select:hover {
+  border-color: #00008B;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  background-color: #87CEEB;
+  /* background-color: #0047AB; */
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content label {
+  display: block;
+  padding: 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.box-parte-mostrar-asistentes {
+  max-height: 150px;
+  /* Ajusta según necesites */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding-left: 8px;
+  padding-top: 0;
+}
+
+#filters-container-eventos,
+#filters-container-personas,
+#filters-container-estructura {
+  margin-right: 0.5rem;
+}
+
+#filters-container-personas,
+#filters-container-instituciones,
+#filters-container-eventos,
+#filters-container-estructura {
+  width: 80%;
+  display: flex;
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box-select-option-search-persona {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+}
+
+.box-select-option-search-persona label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.box-select-option-search-persona select {
+  width: 60%;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0047AB;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.box-form-search-persona,
+.box-form-search-institucion,
+.box-form-search-organizador,
+.box-form-search-coordinador {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.box-form-search-persona #form-search-persona,
+.box-form-search-institucion #form-search-institucion,
+.box-form-search-organizador #form-search-organizador,
+.box-form-search-organizador #form-search-coordinador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 0.5rem;
+}
+
+#form-search-persona input,
+#form-search-institucion input,
+#form-search-organizador input,
+#form-search-coordinador input {
+  padding: 5px;
+  height: 1.7rem;
+  border-radius: 5px;
+  border: 1px solid #0047AB;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#button-remove-search-institucion {
+  color: red;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.box-button-mostrar-asist-imagenes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-select-filtro-partido-politico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box-select-filtro-partido-politico select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0047AB;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  #box-body-main-maps {
+    min-height: 55rem;
+  }
+
+  #box-main-maps {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #box-body-main-maps {
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+
+  #box-main-maps {
+    width: 80%;
+    height: 42rem;
+  }
+
+  #box-referencia-filtro-colors-eventos-activo {
+    width: 20%;
+    height: 42rem;
+  }
+}
+
+.box-button-mostrar-barrios-juris {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.box-list-personas-a-cargo-modal-estructura {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+}
+
+#list-personas-a-cargo-modal {
+  margin-bottom: 10px
+}
+
+.sin-coordinadores {
+  padding: 0.5rem;
+  font-style: italic;
+}

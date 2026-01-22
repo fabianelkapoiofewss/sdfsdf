@@ -1,0 +1,246 @@
+/* PALETA FORMOSA
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+#box-modal-add-coordinador {
+  position: fixed; /* Fijo en relación al viewport */
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Centrando */
+  z-index: 1000; /* Asegurando que esté encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 70%;
+  height: auto;
+  max-height: 98vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #B0C4DE;
+  background-color: #0047AB;
+}
+#box-modal-add-coordinador-buttons {  
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+}
+#box-modal-add-coordinador-buttons button{
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+#box-modal-add-coordinador-input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+#box-modal-add-coordinador-input input{
+  width: 18rem;
+  height: 1.7rem;
+  margin-right: 0.2rem;
+}
+#box-modal-add-coordinador-input button{
+  margin-left: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 5px;
+}
+
+.botonActivo {
+  background-color: #00008B; /* Celeste claro */
+  color: white; /* Azul oscuro */
+  font-weight: bold;
+}
+#box-modal-add-coordinador-results { 
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: white;
+  overflow-y: auto;
+  /* padding: 2rem; */
+}
+#box-modal-add-coordinador-results table{
+  background-color: white;
+  padding: 1rem;
+  border-collapse: collapse; /* Para evitar que haya doble borde */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  color : black;
+}
+#box-modal-add-coordinador-results table thead{
+  border-bottom: 2px solid #444342;
+  background-color: #B0C4DE;
+
+}
+#box-modal-add-coordinador-results table thead th{
+  padding: 0.5rem;
+  border: 1px solid black; /* Bordes de color negro */
+  text-align: center; /* Alineación del texto */
+}
+#box-modal-add-coordinador-results table tbody{
+  border: 1px solid black; /* Bordes de color negro */
+}
+#box-modal-add-coordinador-results table tbody td{
+  border: 1px solid black; /* Bordes de color negro */
+  padding: 0.3rem;
+}
+
+#caja-principal-agregarCoordinador {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#caja-principal-agregarCoordinador h3 {
+  color: white;
+}
+
+#caja-principal-agregarPersoACargo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#caja-principal-seleccionar-agregarPersoACargo {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+#caja-principal-seleccionar-agregarPersoACargo h4 {
+  color: white;
+}
+#caja-principal-ver-agregarPersoACargo {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#caja-principal-ver-agregarPersoACargo h3{
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#caja-principal-ver-agregarPersoACargo ul{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  height: 6rem;
+  overflow-y: auto;
+}
+#caja-principal-ver-agregarPersoACargo button{
+  margin-bottom: 1rem;
+}
+
+#primera-caja-principal-juri{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#caja-seleccionar-juri {
+  width: 50%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+#caja-seleccionar-juri select{
+  width: 80%;
+}
+
+#caja-ver-juri {
+  width: 50%;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  /* border-left: 1px solid #B0C4DE;
+  border-right: 1px solid #B0C4DE; */
+}
+#caja-ver-juri h3{
+  text-align: center;
+  margin-top: 1.4rem;
+}
+#caja-ver-juri ul{
+  list-style-type: none;
+  padding-left: 0;
+
+}
+#caja-ver-juri li{
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+#caja-boton-carga-dirigentes {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+}
+#caja-boton-carga-dirigentes button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+#caja-fechaDesde-coord {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+#caja-fechaDesde-coord h3{
+  margin: 0;
+  color: white;
+}
+
+#caja-fechaDesde-coord input{
+  width: 30%;
+  margin-top: 1.5rem;
+}
+#caja-fechaDesde-coord button{
+  margin-top: 3rem;
+}

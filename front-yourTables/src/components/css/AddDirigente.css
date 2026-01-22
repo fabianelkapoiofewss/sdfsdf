@@ -1,0 +1,200 @@
+#box-modal-add-dirigente {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 70%;
+  height: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #B0C4DE;
+  background-color: #0047AB;
+}
+
+.botonActivo {
+  background-color: #00008B;
+  color: white;
+  font-weight: bold;
+}
+
+#box-modal-add-dirigente-buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+#box-modal-add-dirigente-buttons button {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#box-modal-add-dirigente-input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+#box-modal-add-dirigente-input form {
+  display: flex;
+  gap: 10px;
+}
+
+#box-modal-add-dirigente-input input {
+  width: 18rem;
+  height: 1.7rem;
+  margin-right: 0.2rem;
+}
+
+#box-modal-add-dirigente-input button {
+  margin-left: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 5px;
+}
+
+#box-modal-add-dirigente-results {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#box-modal-add-dirigente-results table {
+  background-color: white;
+  padding: 1rem;
+  border-collapse: collapse;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  color: black;
+}
+
+#box-modal-add-dirigente-results table thead {
+  border-bottom: 2px solid #444342;
+  background-color: #B0C4DE;
+
+}
+
+#box-modal-add-dirigente-results table thead th {
+  padding: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#box-modal-add-dirigente-results table tbody {
+  border: 1px solid black;
+}
+
+#box-modal-add-dirigente-results table tbody td {
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+
+/* Caja de barrios */
+#caja-principal-agregarDirigente,
+#caja-principal-agregarSuperior {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#caja-principal-agregarDirigente h3,
+#caja-principal-agregarSuperior h4 {
+  color: white;
+}
+
+#caja-principal-agregarBarrios {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#caja-seleccionar-barrios {
+  width: 50%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+#caja-seleccionar-barrios select {
+  width: 80%;
+}
+
+#caja-ver-barrios {
+  width: 50%;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+#caja-ver-barrios h3 {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+#caja-ver-barrios ul {
+  height: 10rem;
+  max-height: 10rem;
+  outline: 1px solid white;
+  width: 40%;
+  border-radius: 5px;
+  padding: 10px 1em 10px 2em;
+  overflow-y: auto;
+}
+
+#caja-ver-barrios li {
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+#caja-fechas-dirigente {
+  width: 35%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#caja-fechas-dirigente label {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+#caja-fechas-dirigente input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,71 @@
+/* PALETA FORMOSA
+
+Azul oscuro: #00008B (Dark Blue)
+Azul marino: #0000CD (Medium Blue)
+Azul cobalto: #0047AB
+Azul cielo: #87CEEB
+Celeste claro: #B0C4DE
+Blanco: #FFFFFF
+
+*/
+
+.box-modal-view-barrios {
+    position: fixed;
+    /* Fijo en relación al viewport */
+    top: 50%;
+    /* Centrado verticalmente */
+    left: 50%;
+    /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrando */
+    z-index: 1000;
+    /* Asegurando que esté encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para efecto de profundidad */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    width: 30%;
+    /* height: auto; */
+    max-height: 600px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #B0C4DE;
+    background-color: #0047AB;
+}
+
+.box-body-view-barrios {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.box-body-view-barrios ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box-body-view-barrios li {
+    font-size: 17px;
+}
+
+.box-loading-barrios-juris {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}

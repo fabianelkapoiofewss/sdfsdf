@@ -1,0 +1,121 @@
+.box-padre-users-admin {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #B0C4DE;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-main-users-admin {
+    width: 70%;
+    max-height: 50rem;
+    /* height: auto; */
+
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    background-color: #0047AB;
+    border: 2px solid #B0C4DE;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+
+    padding: 10px;
+    color: white;
+    overflow-y: auto;
+}
+
+.box-header-butoon-users-admin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box-header-butoon-users-admin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.box-body-users-admin h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.box-list-users-admin {
+    width: 100%;
+    /* min-height: 40vh; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: auto; */
+
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+.box-datos-user-admin {
+    width: 100%;
+    height: auto;
+
+    background-color: #B0C4DE;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.box-datos-user-admin ul {
+    padding: 0;
+    margin: 0;
+}
+
+.box-datos-user-admin .datos-user-linea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.box-datos-user-admin .datos-user-linea p {
+    margin: 0.2rem;
+    padding: 0;
+}
+
+
+.box-icon-accion-user-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-user-admin{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.casilla-accion-user-admin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.casilla-accion-user-admin #casilla-accion-edit,
+.casilla-accion-user-admin #casilla-accion-delete {
+    outline: 1px solid black;
+}

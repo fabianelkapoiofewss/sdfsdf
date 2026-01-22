@@ -1,0 +1,76 @@
+#box-modal-edit-dirigente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #B0C4DE;
+    background-color: #0047AB;
+}
+
+#caja-principal-editarDirigente {
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#caja-inputs-edit-dirigente,
+#caja-fechas-edit-dirigente {
+    width: 45%;
+}
+
+#caja-inputs-edit-dirigente {
+    padding: 2rem 0 2rem 2rem;
+    color: white;
+}
+
+#caja-inputs-edit-dirigente select {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#caja-fechas-edit-dirigente {
+    padding: 2rem 2rem 2rem 0;
+}
+
+#caja-inputs-edit-dirigente label {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#caja-fechas-edit-dirigente label {
+    font-size: 16px;
+    color: white;
+}
+
+#caja-fechas-edit-dirigente input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#boton-remove-barrio {
+    color: red;
+    transition: transform 0.3s;
+    cursor: pointer;
+    /* Indica que es clickeable */
+}
+
+#boton-remove-barrio:hover {
+    transform: scale(1.2);
+}
