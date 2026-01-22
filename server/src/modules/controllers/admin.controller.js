@@ -4,10 +4,10 @@ import { responseHandler } from "../../utils/responseHandler.js";
 
 export const adminController = {
     login: async (req, res, next) => {
-        const { correoElectronico, contrasena } = req.body;
+        const { identificador, contrasena } = req.body;
         // console.log("Datos recibidos:", { correoElectronico, contrasena });
         try {
-            const admin = await adminService.login(correoElectronico, contrasena);
+            const admin = await adminService.login(identificador, contrasena);
             res.cookie('token', admin.token, {
                 httpOnly: true,
                 sameSite: 'none',
