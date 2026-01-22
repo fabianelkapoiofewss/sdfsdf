@@ -16,7 +16,7 @@ import { authentication } from "../../middlewares/authentication.js";
 
 const router = Router();
 
-router.use('/auth', adminRouter);
+router.use('/api/auth', adminRouter);
 router.use(authentication);
 router.use('/usuario', usuarioRouter);
 router.use('/persona', personaRouter);
