@@ -10,7 +10,7 @@ const app = express()
 const port = envConfig.PORT
 const isProduction = envConfig.NODE_ENV === 'production'
 app.use(cors({
-    origin: true,
+    origin: 'https://por-siempre-companero.pages.dev',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
@@ -22,7 +22,7 @@ app.use(cookieParser())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(router);
+app.use('/api', router);
 
 export const listen = async () => {
     try {
